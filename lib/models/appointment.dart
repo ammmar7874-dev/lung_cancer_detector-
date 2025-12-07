@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Appointment {
   final String id;
   final String title;
@@ -18,7 +20,20 @@ class Appointment {
   });
 
   String get formattedDate {
-    final months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    final months = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
+    ];
     final month = months[dateTime.month - 1];
     final hour = dateTime.hour;
     final minute = dateTime.minute;
@@ -42,4 +57,3 @@ enum AppointmentType {
     );
   }
 }
-
